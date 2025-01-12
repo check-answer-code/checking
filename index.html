@@ -8,7 +8,9 @@
         /* Umumiy sahifa dizayni */
     body {
         font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(59, 30, 91, 0.5)), url(${randomImage});
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         margin: 0;
@@ -18,6 +20,7 @@
         min-height: 100vh;
         color: #fff;
         text-align: center;
+        
     }
 
 
@@ -187,25 +190,46 @@
         }
     }
 
+    @media screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+    .container, .teacher-panel {
+        width: 95%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+    }
+
     @media screen and (max-width: 480px) {
+        body {
+            background-size: contain; /* Mobilda tasvirga ko'proq e'tibor */
+            background-position: center;
+        }
         h1 {
             font-size: 1.5em;
         }
-
         input {
-            font-size: 0.9em;
-            padding: 8px;
+            font-size: 0.8em;
+            padding: 6px;
         }
-
         button {
             font-size: 0.9em;
             padding: 8px;
         }
-
-        #resultMessage {
-            font-size: 1em;
-        }
     }
+
 
 
   </style>
