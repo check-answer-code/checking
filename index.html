@@ -190,47 +190,83 @@
         }
     }
 
+    /* Mobil uchun moslashuv */
     @media screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-        background-position: center;
+        .container, .teacher-panel {
+            width: 95%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        input {
+            font-size: 1em;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px;
+        }
+
+        #resultMessage {
+            font-size: 1em;
+        }
     }
-    .container, .teacher-panel {
-        width: 95%;
-        padding: 15px;
-    }
-    h1 {
-        font-size: 1.8em;
-    }
-    input {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-    button {
-        font-size: 1em;
-        padding: 10px;
-    }
+
+    /* Kichik ekranlar uchun qo'shimcha moslashuv */
+    @media screen and (max-width: 768px) {
+        .container, .teacher-panel {
+            width: 95%; /* O'lchamni moslashtirish */
+            padding: 15px; /* Oraliqni kamaytirish */
+        }
+
+        h1 {
+            font-size: 1.5em; /* Matnni kichraytirish */
+        }
+
+        input {
+            font-size: 0.9em; /* Matn maydonining o'lchami */
+            padding: 10px;
+        }
+
+        button {
+            font-size: 0.9em; /* Tugmani moslashtirish */
+            padding: 10px;
+        }
+
+        #resultMessage {
+            font-size: 1em; /* Natija matnining hajmini kichraytirish */
+        }
     }
 
     @media screen and (max-width: 480px) {
-        body {
-            background-size: contain; /* Mobilda tasvirga ko'proq e'tibor */
-            background-position: center;
+        .container, .teacher-panel {
+            width: 100%; /* To'liq ekran kengligi */
+            padding: 10px; /* Kamroq oraliq */
         }
+
         h1 {
-            font-size: 1.5em;
+            font-size: 1.2em; /* Bosh matnni kichikroq qilish */
         }
+
         input {
-            font-size: 0.8em;
-            padding: 6px;
-        }
-        button {
-            font-size: 0.9em;
+            font-size: 0.8em; /* Kichik ekran uchun matn maydoni */
             padding: 8px;
         }
+
+        button {
+            font-size: 0.8em; /* Tugmani moslashtirish */
+            padding: 8px;
+        }
+
+        #resultMessage {
+            font-size: 0.9em; /* Kichik ekran uchun natija matni */
+        }
     }
-
-
 
   </style>
 </head>
